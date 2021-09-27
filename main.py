@@ -11,3 +11,7 @@ dp = Dispatcher(bot)
 async def psc(message: types.Message):
     await message.reply('g')
 
+@dp.message_handler(commands=['help'])
+async def phc(message: types.Message):
+    await message.reply('gg ne budet /photo')
+
